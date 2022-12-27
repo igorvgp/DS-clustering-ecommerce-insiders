@@ -7,7 +7,7 @@
 *The in-depth Python code explanation is available in [this](https://nbviewer.org/github/igorvgp/DS-clustering-ecommerce-insiders/blob/main/notebooks/insiders_clustering.ipynb#overview) Jupyter Notebook.*
 
 # 1. **Abstract**
- This Data Science project was developed with data available on [Kaggle](https://www.kaggle.com/code/cheekonglim/uk-high-value-customers-identification) in order to find out the most valuable costumers to join a loyalty program called "Insiders".
+ This Data Science project was developed with data available on [Kaggle](https://www.kaggle.com/code/cheekonglim/uk-high-value-customers-identification) in order to find out the most valuable Ecommerce customers to join a loyalty program called "Insiders".
 <p align="justify"> Gaussian Mixture unsupervised machine learning model was used for clustering into a Tree-Based embedding, where the "Insiders" cluster represents 15.7% of the customers and those customers are responsible for 51.7% of the company's Gross Revenue.</p>
 
 <p align="justify"> The architecture of the project is shown in the image below: </p>
@@ -19,32 +19,22 @@
 The solution was deployed using Amazon Web Services (AWS) resources and the cluster analysis dashboard can be seen by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw).
 
 <p align="center">
-  <img src="https://github.com/igorvgp/rossman_stores/blob/main/Img/telegram_bot.jpeg" alt="drawing" width="350"/>
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/Insiders_Cluster_Analysis1.jpg" alt="drawing" width="350"/>
 </p>
 
 # 2. **Data Overview**
-The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](https://www.kaggle.com/competitions/rossmann-store-sales/data) contains historical sales data for 1,115 Rossmann stores. The initial features descriptions are available below:
+The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](https://www.kaggle.com/code/cheekonglim/uk-high-value-customers-identification) contains all the transactions occurring between Nov-2016 to Dec-2017 for a UK-based online retail store. The initial features descriptions are available below:
 
 | Feature | Definition |
 |---|---|
-| Id | an Id that represents a (Store, Date) duple within the dataset.|
-| Store | a unique Id for each store.|
-| Sales | the turnover for any given day.|
-| DayOfWeek | day of week on which the sale was made (e.g. DayOfWeek=1 -> monday, DayOfWeek=2 -> tuesday, etc).|
-| Date | date on which the sale was made.|
-| Customers | the number of customers on a given day.|
-| Open | an indicator for whether the store was open: 0 = closed, 1 = open.|
-| StateHoliday | indicates a state holiday. Normally all stores, with few exceptions, are closed on state holidays. Note that all schools are closed on public holidays and weekends. a = public holiday, b = Easter holiday, c = Christmas, 0 = None.|
-| SchoolHoliday  | indicates if the (Store, Date) was affected by the closure of public schools.|
-| StoreType  | differentiates between 4 different store models: a, b, c, d.|
-| Assortment | describes an assortment level: a = basic, b = extra, c = extended.|
-| CompetitionDistance | distance in meters to the nearest competitor store.|
-| CompetitionOpenSince(Month/Year)| gives the approximate year and month of the time the nearest competitor was opened.|
-| Promo | indicates whether a store is running a promo on that day.|
-| Promo2 | Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating.|
-| Promo2Since(Year/Week)| describes the year and calendar week when the store started participating in Promo2.|
-| PromoInterval | describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store.|
-
+| InvoiceNo | A 6-digit integral number uniquely assigned to each transaction.|
+| StockCode | Product (item) code. |
+| Description | Product (item) name.|
+| Quantity | The quantities of each product (item) per transaction.|
+| InvoiceDate | The day when each transaction was generated.|
+| UnitPrice | Unit price (Product price per unit).|
+| CustomerID | Customer number (Unique ID assigned to each customer).|
+| Country | Country name (The name of the country where each customer resides).|
 
 # 3. **Assumptions**
 - Customers column was dropped, because for now there's no information about the amount of customers six weeks into the future. 
