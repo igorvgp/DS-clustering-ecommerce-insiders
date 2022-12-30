@@ -63,21 +63,21 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 <p align="justify"> To select the most valuable costumers to join a loyalty program called "Insiders" a Unsupervised Machine Learning model was applied. To achieve that, the following steps were performed: </p>
 
-- <b> Understanding the Business Problem </b> :
+<b> Understanding the Business Problem </b> :
 
-<p>     Who are the people eligible for the loyalty program?
-What does "being elegible" mean? Who are the "valuable customers"?</p>
-<p>Invoicing:
-- High ATP
-- High LTV
-- Low recency
-- High basket size
-- Low probability of churn
-Cost:
-- Low product return rate
-- Shopping Experience:
-- High average rating
-</p>
+* Who are the people eligible for the loyalty program?
+* What does "being elegible" mean? 
+* Who are the "valuable customers"?
+* Invoicing:
+	* High ATP
+	* High LTV
+	* Low recency
+	* High basket size
+	* Low probability of churn
+* Cost:
+	* Low product return rate
+* Shopping Experience:
+	* High average rating
 
 - <b> Collecting Data </b>: Collecting Rossmann store and sales data from Kaggle.
 
