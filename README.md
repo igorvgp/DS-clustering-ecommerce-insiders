@@ -1,6 +1,6 @@
 <h1 align="center"> E-commerce customers clustering</h1>
 
-<p align="center">
+ align="center">
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/ecommerce.png" alt="drawing" width="800"/>
 </p>
 
@@ -67,17 +67,17 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 who are the people eligible for the loyalty program?
 What does "being elegible" mean? Who are the "valuable customers"?
-Invoicing:
-High ATP
-High LTV
-Low recency
-High basket size
-Low probability of churn
+<p>Invoicing:
+- High ATP
+- High LTV
+- Low recency
+- High basket size
+- Low probability of churn
 Cost:
-Low product return rate
-Shopping Experience:
-High average rating
-
+- Low product return rate
+- Shopping Experience:
+- High average rating
+</p>
 
 - <b> Collecting Data </b>: Collecting Rossmann store and sales data from Kaggle.
 
