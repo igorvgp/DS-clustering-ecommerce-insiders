@@ -65,8 +65,8 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <b> Understanding the Business Problem </b> :
 
-who are the people eligible for the loyalty program?
-What does "being elegible" mean? Who are the "valuable customers"?
+<p>     Who are the people eligible for the loyalty program?
+What does "being elegible" mean? Who are the "valuable customers"?</p>
 <p>Invoicing:
 - High ATP
 - High LTV
