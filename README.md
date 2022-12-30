@@ -1,4 +1,4 @@
-<h1 align="center"> E-commerce costumers clustering.</h1>
+<h1 align="center"> E-commerce costumers clustering</h1>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="800"/>
@@ -37,17 +37,24 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 | Country | Country name (The name of the country where each customer resides).|
 
 # 3. **Assumptions**
-- Customers column was dropped, because for now there's no information about the amount of customers six weeks into the future. 
-- The NaN's in CompetitionDistance were replaced by 3 times the maximum CompetitionDistance in the dataset, because the observations with NaN's are likely stores that are too far, which means there's no competition.
-- Some new features were created in order to best describe the problem: 
+- The Customer ID missing values were filled out with artificial customer IDs per purchase. 
+- Some stock codes were removed as they do not represent completed purchases and behave like noise.
+- 'European Community' and 'Unspecified' countries were deleted from the dataset as it doesn't represents a significant amout of data.
+- Unit price below 4 cents have been removed from the data, since it's not the original price of the products and they interfere with modeling the phenomenon.
+- The user "16446" was removed from the dataset because he has a very disparate number of purchases and returns. likely related to fraud or error.
+- The dataset was grouped by users and new features were created in order to best describe the problem: 
 
 | New Feature | Definition |
 |---|---|
-| day/week_of_year/year_week/month/year | day/week_of_year/year_week/month/year extracted from 'date' column.|
-| day/day_of_week/week_of_year/month(sin/cos) | sin/cos component of each period, to capture their cyclical behavior.|
-| competition_time_month| amount of months from competition start.|
-| promo_time_week | time in weeks from when the promotion was active.|
-| state_holiday(christmas/easter_holiday/public_holiday/regular_day)| indicates wheter the sale was made in christmas, easter, public holiday or regular day.|
+| Gross Revenue | Unit price * quantity of products.|
+| Recency | Days since last purchase.|
+| qtty_invoices| Quantity of invoices by user.|
+| qtty_items | Quantity of items purchased by user.|
+| qtty_products | Quantity of different products purchased by user.|
+| avg_ticket | The average ticket for each user: sum(gross_revenue) / no_invoices|
+| qtty_products | Quantity of different products purchased by user.|
+| qtty_products | Quantity of different products purchased by user.|
+| qtty_products | Quantity of different products purchased by user.|
 
 # 4. **Solution Plan**
 ## 4.1. How was the problem solved?
