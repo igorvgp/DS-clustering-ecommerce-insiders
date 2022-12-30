@@ -1,4 +1,4 @@
-<h1 align="center"> E-commerce costumers clustering</h1>
+<h1 align="center"> E-commerce customers clustering</h1>
 
 <p align="center">
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/ecommerce.png" alt="drawing" width="800"/>
@@ -52,16 +52,32 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 | qtty_items | Quantity of items purchased by user.|
 | qtty_products | Quantity of different products purchased by user.|
 | avg_ticket | The average ticket for each user: sum(gross_revenue) / no_invoices|
-| qtty_products | Quantity of different products purchased by user.|
-| qtty_products | Quantity of different products purchased by user.|
-| qtty_products | Quantity of different products purchased by user.|
+| avg_recency_days | The average shopping interval time.|
+| frequency | Quantity of purchased products per day.|
+| qtty_returns | Quantity of returned products.|
+| basket_size | Average quantity of products per purchase.|
+| unique_basket_size | Average quantity of unique products per purchase.|
 
 # 4. **Solution Plan**
 ## 4.1. How was the problem solved?
 
-<p align="justify"> To predict sales values for each store (six weeks in advance) a Machine Learning model was applied. To achieve that, the following steps were performed: </p>
+<p align="justify"> To select the most valuable costumers to join a loyalty program called "Insiders" a Unsupervised Machine Learning model was applied. To achieve that, the following steps were performed: </p>
 
-- <b> Understanding the Business Problem </b> : Understanding the reasons why Rossmann's CEO was requiring that task, and plan the solution. 
+- <b> Understanding the Business Problem </b> :
+
+who are the people eligible for the loyalty program?
+What does "being elegible" mean? Who are the "valuable customers"?
+Invoicing:
+High ATP
+High LTV
+Low recency
+High basket size
+Low probability of churn
+Cost:
+Low product return rate
+Shopping Experience:
+High average rating
+
 
 - <b> Collecting Data </b>: Collecting Rossmann store and sales data from Kaggle.
 
