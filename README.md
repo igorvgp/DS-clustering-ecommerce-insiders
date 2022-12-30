@@ -1,7 +1,7 @@
 <h1 align="center"> E-commerce costumers clustering</h1>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66283452/195202224-01bfd468-9f1c-4e83-af60-b101312a98e3.svg" alt="drawing" width="800"/>
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/ecommerce.png" alt="drawing" width="800"/>
 </p>
 
 *The in-depth Python code explanation is available in [this](https://nbviewer.org/github/igorvgp/DS-clustering-ecommerce-insiders/blob/main/notebooks/insiders_clustering.ipynb#overview) Jupyter Notebook.*
