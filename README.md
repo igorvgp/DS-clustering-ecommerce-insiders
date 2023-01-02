@@ -115,7 +115,8 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - Hierarchical Clustering
 - DBSCAN
 - HDBSCAN
-<p>The performance was calculated through [Silhouette-Score](https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c). The initial performance for all four algorithms are displayed below: </p>
+This [dataset](https://www.kaggle.com/code/cheekonglim/uk-high-value-customers-identification)
+<p>The performance was calculated through [Silhouette Score](https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c). The initial performance for all four algorithms are displayed below: </p>
 
 <p align="center">
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/algorithms_silhouette.png" alt="drawing" width="350"/>
