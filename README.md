@@ -123,20 +123,15 @@ The performance was calculated through [Silhouette Score](https://towardsdatasci
 </p>
 
 
-<p align="justify"> Both Linear Regression and Lasso Regression have worst performances in comparison to the simple Average Model. This shows a nonlinear behavior in our dataset, hence the use of more complex models, such as Random Forest and XGBoost. </p>
+<p align="justify"> KMeans, Gaussian Mixture Model and Hierarchical Clustering presented the best Silhouettes, reaching the score of 0.71. Despite that, analyzing the graphical distribution of the clusters it is possible to observe attributions and it was possible to identify inconsistent attributions.</p>
 
-<p align="justify"> <b> The XGBoost model was chosen for Hyperparameter Tuning. Even if Random Forest has the best performance if we look into the metrics, XGBoost would still be better to use, because it's much faster to train and tune </b>. </p>
+<p align="justify"> <b> The Gaussian Mixture Model with 10 clusters was chosen, presenting a good Silhouette score of 0.68 and a good cluster distribution</b>. </p>
 
-<p>After tuning XGBoost's hyperparameters using Random Search the model performance has improved: </p>
+<p>After applying Gaussian mixture model to the data, the following cluster distribution was obtained: </p>
 
-<div align="center">
-	
-| **Model Name** | **MAE** | **MAPE** | **RMSE** |
-|:---:|:---:|:---:|:---:|
-| XGBoost Regressor | 949.881428	 | 0.143602 | 1336.919406 |
-
-
-</div>
+<p align="center">
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/gmm_clusters.png" alt="drawing" width="800"/>
+</p>
 
 ## 5.1. Brief Financial Results:
 
