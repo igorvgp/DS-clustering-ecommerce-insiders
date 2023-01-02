@@ -115,14 +115,12 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - Hierarchical Clustering
 - DBSCAN
 - HDBSCAN
-
 <p>The performance was calculated through [Silhouette Score](https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c). The initial performance for all four algorithms are displayed below: </p>
 
-<div align="center">
+<p align="center">
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/Insiders_Cluster_Analysis1.jpg" alt="drawing" width="350"/>
+</p>
 
-  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/algorithms_silhouette.png" alt="drawing" width="350"/>
-
-</div>
 
 <p align="justify"> Both Linear Regression and Lasso Regression have worst performances in comparison to the simple Average Model. This shows a nonlinear behavior in our dataset, hence the use of more complex models, such as Random Forest and XGBoost. </p>
 
