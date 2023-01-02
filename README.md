@@ -120,12 +120,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 <div align="center">
 
-| **Model Name** | **MAE** | **MAPE** | **RMSE** |
-|:---:|:---:|:---:|:---:|
-| Random Forest Regressor | 1104.87 +/- 209.75 | 0.16 +/- 0.03	 | 1530.38 +/- 273.38 |
-| XGBoost Regressor | 1179.33 +/- 111.96 | 0.17 +/- 0.01	 | 1639.3 +/- 148.34 |
-| Linear Regression | 2079.0 +/- 280.91 | 0.3 +/- 0.01	 | 2955.05 +/- 426.56 |
-| Lasso Regression | 2090.34 +/- 307.94 | 0.3 +/- 0.01 | 2995.12 +/- 458.89 |
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/algorithms_silhouette.png" alt="drawing" width="350"/>
 
 </div>
 
