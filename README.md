@@ -11,7 +11,7 @@
 <p align="justify"> Gaussian Mixture unsupervised machine learning model was used for clustering into a Tree-Based embedding, where the "Insiders" cluster represents 15.7% of the customers and those customers are responsible for 51.7% of the company's Gross Revenue.</p>
 
 <p align="justify"> The architecture of the project is shown in the image below: </p>
-
+{}
 <p align="center">
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/diagram.jpg" alt="drawing" width="800"/>
 </p>
@@ -115,10 +115,10 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - Hierarchical Clustering
 - DBSCAN
 - HDBSCAN
-<p>The performance was calculated through [Silhouette Score](https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c). The initial performance for all four algorithms are displayed below: </p>
+<p>The performance was calculated through [Silhouette-Score](https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c). The initial performance for all four algorithms are displayed below: </p>
 
 <p align="center">
-  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/Insiders_Cluster_Analysis1.jpg" alt="drawing" width="350"/>
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/algorithms_silhouette.png" alt="drawing" width="350"/>
 </p>
 
 
