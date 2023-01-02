@@ -79,57 +79,44 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 * Shopping Experience:
 	* High average rating
 
-- <b> Collecting Data </b>: Collecting Rossmann store and sales data from Kaggle.
+- <b> Collecting Data </b>: Collecting e-commerce data from Kaggle.
 
 - <b> Data Cleaning </b>: Renaming columns, changing data types and filling NaN's. 
 
 - <b> Feature Engineering </b>: Creating new features from the original ones, so that those could be used in the ML model. 
 
-- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to obtain business experience, look for useful business insights and find important features for the ML model. </a>. </p>
+- <b> Data Preparation </b>: Applying Rescaling Techniques in the data.
 
-- <b> Data Preparation </b>: Applying Normalization and Rescaling Techniques in the data, as well as Enconding Methods and Response Variable Transformation.
+- <b> Space Studying </b>: Analysing the variability of the data after applying PCA, UMAP, t-SNE and tree based embeddind.
 
-- <b> Feature Selection </b>: Selecting the best features to use in the ML model by applying the <a href="https://www.section.io/engineering-education/getting-started-with-boruta-algorithm/">Boruta Algorithm</a>. 
+- <p align="justify"> <b> Machine Learning Modeling </b>: Applying clustering algorithms with different K values to find the one with best performance. </p>
 
-- <p align="justify"> <b> Machine Learning Modeling </b>: Training Regression Algorithms with time series cross-validation. The best model was selected to be improved via Hyperparameter Tuning. </p>
+- <b> Model Evaluation </b>: Evaluating the model using Silhouette Score and Silhouette Diagram. 
 
-- <b> Model Evaluation </b>: Evaluating the model using four metrics: MAE, MAPE and RMSE. 
+- <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to analyze the characteristics of the clusters and look for useful business insights.
 
-- <b> Financial Results </b>: Translating the ML model's statistical performance to financial and business performance.
-
-- <p align="justify"> <b> Model Deployment (Telegram Bot) </b>: Implementation of a Telegram Bot that will give you the prediction of any given available store number. This is the project's <b>Data Science Product</b>, and it can be accessed from anywhere. </p>
+- <p align="justify"> <b> Model Deployment </b>: Model deployment through aws resources (S3, EC2 and RDS). </p>
   
 ## 4.2. Tools and techniques used:
-- Python 3.9.13, Pandas, Matplotlib, Seaborn and Sklearn.
-- Jupyter Notebook and VSCode.
-- Flask and Python API's.  
-- Ngrok and Telegram Bot.
-- Git and Github.
-- Exploratory Data Analysis (EDA). 
-- Techniques for Feature Selection.
-- Regression Algorithms (Linear and Lasso Regression; Random Forest and XGBoost Regressors).
-- Cross-Validation Methods, Hyperparameter Optimization and Algorithms Performance Metrics (RMSE, MAE and MAPE).
+- Python 3.9.13
+- Pandas and Numpy
+-  Matplotlib, Seaborn and Sklearn.
+- Jupyter Notebook.
+- AWS Services: S3: raw data, EC2: virtual machine (Ubuntu 20.04), RDS: Database (PostgreSQL).
+- Embedding methods: PCA, t-SNE, UMAP and Tree Based embedding.
+- Clustering algorithms (K-Means, Hierachical Clustering, DBSCAN and HDBSCAN).
+- Performance Metrics: Silhouette Score and Silhouette Diagram.
 
 # 5. **Machine Learning Models**
 
-<p align="justify"> This was the most fundamental part of this project, since it's in ML modeling where the sales predictions for each store can be made.  An average model was used as a baseline and four models were trained using time series cross-validation: </p>
+<p align="justify"> A tree-based embedding with two features ensured greater separation of possible clusters, so four clustering ML algorithms were tested on this space space: </p>
 
-- Linear Regression
-- Lasso Regression (Regularized Linear Regression)
-- Random Forest Regressor
-- XGBoost Regressor
+- K-Means
+- Hierarchical Clustering
+- DBSCAN
+- HDBSCAN
 
-<p>The baseline model performance is displayed below: </p>
-
-<div align="center">
-
-| **Model Name** | **MAE** | **MAPE** | **RMSE** |
-|:---:|:---:|:---:|:---:|
-| Average Model | 1354.80 | 0.2064	 | 1835.135542 |
-
-</div>
-
-<p>The initial performance for all four algorithms are displayed below: </p>
+<p>The performance was calculated through [Silhouette Score](https://towardsdatascience.com/silhouette-coefficient-validating-clustering-techniques-e976bb81d10c). The initial performance for all four algorithms are displayed below: </p>
 
 <div align="center">
 
