@@ -97,7 +97,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <p align="justify"> <b> Model Deployment </b>: Model deployment through aws resources (S3, EC2 and RDS). </p>
 
-- <p align="justify"> <b> Model Monitoring </b>: Dashboard developed with Google Looker Studio to visualize the clusters and its main matrics. It can be accessed by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw).</p>
+-<b> Model Monitoring</b>: Dashboard developed with Google Looker Studio to visualize the clusters and its main matrics. It can be accessed by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw).
   
 ## 4.2. Tools and techniques used:
 - Python 3.9.13
@@ -145,7 +145,9 @@ The performance was calculated through [Silhouette Score](https://towardsdatasci
 
 # 6. **Model Deployment**
 
-<p align="justify">  As previously mentioned, the results are available on a Dashboard available [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw). The idea behind this is to facilitate access from anywhere and any mobile device with internet access. With the information available on the Dashboard, the marketing team will be able to analyze the behavior of customer groups and create personalized action plans for each of them.
+As previously mentioned, the results are available on a Dashboard available [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw). 
+
+<p align="justify">  The idea behind this is to facilitate access from anywhere and any mobile device with internet access. With the information available on the Dashboard, the marketing team will be able to analyze the behavior of customer groups and create personalized action plans for each of them.
 
 In addition, the data scientist will be able to monitor the model by identifying the shape of the clusters with the entry of new clients in the Tree Based Embedding space, identifying the union or generation of new clusters in the space, and evaluating the retraining results.
 
