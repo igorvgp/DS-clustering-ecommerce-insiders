@@ -96,6 +96,8 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 - <p align="justify"> <b> Exploratory Data Analysis (EDA) </b>: Exploring the data in order to analyze the characteristics of the clusters and look for useful business insights.
 
 - <p align="justify"> <b> Model Deployment </b>: Model deployment through aws resources (S3, EC2 and RDS). </p>
+
+- <p align="justify"> <b> Model Monitoring </b>: Dashboard developed with Google Looker Studio to visualize the clusters and its main matrics. It can be accessed by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw).</p>
   
 ## 4.2. Tools and techniques used:
 - Python 3.9.13
@@ -133,49 +135,31 @@ The performance was calculated through [Silhouette Score](https://towardsdatasci
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/gmm_clusters.png" alt="drawing" width="800"/>
 </p>
 
-## 5.1. Brief Financial Results:
+## 5.1. Summary of results:
 
-<p align="justify"> Below there are displayed two tables with brief financial results given by the XGBoost model. </p>
+<p align="justify"> Below is a table with the main characteristics of each group of customers found, the clusters were named according to these characteristics. </p>
 
-<p align="justify"> A couple interesting metrics to evaluate the financial performance of this solution is the MAE and MAPE. Below there's a table with a few stores metrics: </p>
-<div align="center">
-
-| **Store** | **Predictions (€)** | **Worst Scenario (€)** | **Best Scenario (€)** | **MAE (€)** | **MAPE** |
-|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1  |	164,545.94 |	150,086.63 |	179,005.24 |	14,459.31 |	0.09 |
-| 2  |	178,759.59 |	151,883.56 |	205,635.62 |	26,876.03 |	0.15 |
-| 3  |	266,517.19 |	231,827.11 |	301,207.26 |	34,690.07 |	0.13 |
-| 4  |	340,026.47 |	303,667.24 |	376,385.70 |	36,359.22 |	0.10 |
-| 5  |	170,492.62 |	132,908.07 |	208,077.14 |	37,584.53 |	0.22 |
-</div>
-
-<p align="justify"> According to this model, the sales sum for all stores over the next six weeks is: </p>
-
-<div align="center">
-
-| **Scenario (€)** | **Total Sales of the Next 6 Weeks (€)** |
-|:---:|:---:|
-| Prediction  | $283,742,272.00 |
-| Worst Scenario | $244,033,471.48 |
-| Best Scenario | $323,451,121.16 |
-
-</div>
+<p align="center">
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/clusters_summary.png" alt="drawing" width="800"/>
+</p>
 
 # 6. **Model Deployment**
 
-<p align="justify">  As previously mentioned, the complete financial results can be consulted by using the Telegram Bot. The idea behind this is to facilitate the access of any store sales prediction, as those can be checked from anywhere and from any electronic device, as long as internet connection is available.  
-The bot will return you a sales prediction over the next six weeks for any available store, <b> all you have to do is send him the store number in this format "/store_number" (e.g. /12, /23, /41, etc) </b>. If a store number if non existent the message "Store not available" will be returned, and if you provide a text that isn't a number the bot will ask you to enter a valid store id. 
+<p align="justify">  As previously mentioned, the results are available on a Dashboard available [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw). The idea behind this is to facilitate access from anywhere and any mobile device with internet access. With the information available on the Dashboard, the marketing team will be able to analyze the behavior of customer groups and create personalized action plans for each of them.
 
-To link to chat with the Rossmann Bot is [![image](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rossman_newapi_bot)
-
-<i> Because the deployment was made in a free cloud (Render) it could take a few minutes for the bot to respond, <b> in the first request. </b> In the following requests it should respond instantly. </i>
+In addition, the data scientist will be able to monitor the model by identifying the shape of the clusters with the entry of new clients in the Tree Based Embedding space, identifying the union or generation of new clusters in the space, and evaluating the retraining results.
 
 </p>
 
 # 7. **Conclusion**
 In this project the main objective was accomplished:
 
- <p align="justify"> <b> A model that can provide good sales predictions for each store over the next six weeks was successfully trained and deployed in a Telegram Bot, which fulfilled CEO' s requirement, for now it's possible to determine the best resource allocation for each store renovation. </b></p>
+ <p align="justify"> <b> The most valuable customers were found: A group of 15.8% of the customers that brings 51.7% of the company's revenue. </b></p>
+
+# 7. **Next Staps**
+
+- Start a new CRISP cicle with the aim of testing the embedding spaces with more than two dimensions.
+- Automate the retraining process.
 
  # Contact
 
