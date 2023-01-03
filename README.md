@@ -156,8 +156,9 @@ In addition, the data scientist will be able to monitor the model by identifying
 # 7. **Conclusion**
 In this project the main objective was accomplished:
 
- <p align="justify">The most valuable customers were found: A group of 15.8% of the customers that brings 51.7% of the company's revenue, that is called "Insiders". To reach this result, a Clustering algorithm called the Gaussian Mixture model was used to identify the groups in a Tree-Based embedding space.
-In addition to the insiders group, other groups of customers were found, with the aim of assisting in decision making. </p>
+ <p align="justify">The most valuable customers were found: A group of 15.8% of the customers that brings 51.7% of the company's revenue, that is called "Insiders". </p>
+ <p align="justify">To reach this result, a Clustering algorithm called the Gaussian Mixture model was used to identify the groups in a Tree-Based embedding space.</p>
+ <p align="justify">In addition to the insiders group, other groups of customers were found, with the aim of assisting in decision making. </p>
 
 # 7. **Next Staps**
 
