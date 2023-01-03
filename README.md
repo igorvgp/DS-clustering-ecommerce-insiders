@@ -160,7 +160,7 @@ In this project the main objective was accomplished:
  <p align="justify">To reach this result, a Clustering algorithm called the Gaussian Mixture model was used to identify the groups in a Tree-Based embedding space.</p>
  <p align="justify">In addition to the insiders group, other groups of customers were found, with the aim of assisting in decision making. </p>
 
-# 7. **Next Staps**
+# 7. **Next Steps**
 
 - Start a new CRISP cicle with the aim of testing the embedding spaces with more than two dimensions.
 - Automate the retraining process.
