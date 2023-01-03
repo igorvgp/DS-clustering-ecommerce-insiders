@@ -1,6 +1,6 @@
 <h1 align="center"> E-commerce customers clustering</h1>
 
- align="center">
+ <p align="center">
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/ecommerce.png" alt="drawing" width="800"/>
 </p>
 
