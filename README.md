@@ -97,7 +97,7 @@ The data was collected from [Kaggle](https://www.kaggle.com/). This [dataset](ht
 
 - <p align="justify"> <b> Model Deployment </b>: Model deployment through aws resources (S3, EC2 and RDS). </p>
 
--<b> Model Monitoring</b>: Dashboard developed with Google Looker Studio to visualize the clusters and its main matrics. It can be accessed by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw).
+-<p align="justify"><b> Model Monitoring</b>: Dashboard developed with Google Looker Studio to visualize the clusters and its main matrics. </p>It can be accessed by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw).
   
 ## 4.2. Tools and techniques used:
 - Python 3.9.13
