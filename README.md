@@ -1,4 +1,4 @@
-<h1 align="center"> E-commerce customers clustering</h1>
+<h1 align="center"> E-commerce Customers Clustering</h1>
 
  <p align="center">
   <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/ecommerce.png" alt="drawing" width="800"/>
