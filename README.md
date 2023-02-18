@@ -13,7 +13,7 @@
 <p align="justify"> The architecture of the project is shown in the image below: </p>
 
 <p align="center">
-  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/diagram.jpg" alt="drawing" width="800"/>
+  <img src="https://github.com/igorvgp/DS-clustering-ecommerce-insiders/blob/main/img/diagram.jpg" alt="drawing" width="600"/>
 </p>
 
 The solution was deployed using Amazon Web Services (AWS) resources and the cluster analysis dashboard can be seen by clicking [here](https://datastudio.google.com/reporting/eadfbbd6-cc94-4d26-bd73-c642687f60fb/page/uj6AD?s=m6A3oybLvPw) and in the image below:
